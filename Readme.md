@@ -22,7 +22,7 @@ These tags define the various elements of a webpage such as headings, paragraphs
 
 1. **Semantic tag** - A semantic element clearly describes its meaning to both the browser and the developer.
 Ex: < img>, < header>, < footer>, < article>, < table>
-2. **Non-Semantic Tag** - div, span
+2. **Non-Semantic Tag** - div - block level elements, span - inline elements
 
 1. **Self-Closing Tag**
    - **Definition:** Self-closing tags in HTML do not require a separate closing tag. They self-terminate with a slash at the end of the tag.
@@ -88,3 +88,57 @@ Ex: < span>, < a>, < strong>, and < em>.
    - Six Heading Tag
    - h1 to h6
 
+## Lecture 3
+## Fonts tag in HTML
+1. **b tag:** The < b> tag is used to make text bold. However, it doesn't carry any semantic meaning and is purely presentational.
+2. **strong tag:** Similar to < b>, the < strong> tag also makes text bold, but it carries semantic weight, indicating that the enclosed text is of strong importance.
+3. **i tag:** The < i> tag is used to italicize text. Like < b>, it doesn't carry any semantic meaning and is purely presentational.
+4. **em tag:** Similar to < i>, the < em> tag italicizes text, but it carries semantic weight, indicating emphasis.
+5. **u tag:** The < u> tag underlines text.
+6. **s tag:** The < s> tag is used for strikethrough text, indicating that the content is no longer accurate or relevant.
+7. **del tag:** Similar to < s>, the < del> tag also represents strikethrough text, but it carries semantic weight, indicating deleted text.
+8. **mark tag:** The < mark> tag highlights text with a background color, typically yellow.
+9. **sup:** The < sup> tag is used for superscript text, often used for mathematical expressions.
+10. **sub:** The < sub> tag is used for subscript text, typically used for footnotes or chemical formulas.
+
+
+
+### HTML List
+
+- **Definition :** In HTML, a list is a way to organize and display related pieces of content in a structured format. Lists are useful for presenting information in a clear and organized manner, making it easier for users to understand the relationships between different items.
+
+**Type of HTML List**
+
+**1. Ordered List** An ordered list is defined using the < ol> tag in HTML. Each item within the list is defined using the < li> tag. By default, ordered lists display numbers (1, 2, 3...) to indicate the order of the items.
+- Tag: ol tag (ordered list), li tag (list item)
+- Attributes:
+  - type: This attribute specifies the numbering or lettering style used for the list items. Here are the common options:
+    - type="1" (default): Numbers the list items (1, 2, 3...)
+    - type="a": Lowercase alphabetical lettering (a, b, c...)
+    - type="A": Uppercase alphabetical lettering (A, B, C...)
+    - type="i": Lowercase Roman numerals (i, ii, iii...)
+    - type="I": Uppercase Roman numerals (I, II, III...)
+  - start: This attribute allows you to define a starting number or letter for the list. For example, start="4" would begin the list with "4" instead of "1".
+  - reversed: This attribute reverses the order of the numbering or lettering in the list.
+
+**2. Unordered List:** An unordered list in HTML is used to represent a collection of items where the order doesn't necessarily matter. These lists are typically displayed with bullet points to visually group the items.
+- An unordered list is defined using the < ul> tag in HTML.
+- Each item within the list is defined using the < li> tag.
+- By default, unordered lists display bullet points (●, ◦, etc.) for each list item.
+- Tag: ul tag (unordered list), 
+- Attribute: 
+  - type="disc" (default): The standard disc bullet (●)
+  - type="circle": A circle bullet (○)
+  - type="square": A square bullet (■)
+    
+**3. Definition List:** Definition lists in HTML provide a structured way to define terms and their corresponding meanings. They are essentially like mini-glossaries embedded within your web page.
+- Tag:
+  - < dl>: This tag marks the beginning of the definition list.
+  - < dt>: This tag defines the term being explained.
+  - < dd>: This tag defines the description or definition of the term.
+- Attribute: 
+  - Definition lists are simple and don't have any specific attributes associated with their tags.
+  - The structure relies on the proper nesting of tags:
+  - The < dl> tag acts as a container for the entire definition list.
+  - Within < dl>, each term being defined is wrapped in a < dt> tag.
+  - The corresponding definition or description for the term goes inside a < dd> tag, always following the < dt> tag for the corresponding term.
