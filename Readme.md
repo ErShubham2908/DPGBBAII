@@ -74,6 +74,7 @@ Ex: < span>, < a>, < strong>, and < em>.
   - allowfullscreen: Enables fullscreen mode for the embedded content (if applicable).
   - width: Sets the width of the iframe in pixels.
   - height: Sets the height of the iframe in pixels.
+
 **4. Audio:** Used to embed audio files into a web page.
 - tag: audio tag < audio> & source tag < source/>.
 - Attributes:
@@ -142,3 +143,27 @@ Ex: < span>, < a>, < strong>, and < em>.
   - The < dl> tag acts as a container for the entire definition list.
   - Within < dl>, each term being defined is wrapped in a < dt> tag.
   - The corresponding definition or description for the term goes inside a < dd> tag, always following the < dt> tag for the corresponding term.
+
+# HTML Table - 24th Feb
+**Table:** Tables are a fundamental way to structure and present data in a two-dimensional format (rows and columns) on web pages. They are ideal for displaying information that has clear relationships between different categories.
+- Tag: < table>< /table>
+- Attributes: 
+  - **border:** Sets the width of the table's border (in pixels).
+  - **cellpadding:** Defines the space between the cell content and its border (in pixels).
+  - **cellspacing:** Defines the space between adjacent cells (in pixels).
+  - **collapse:** Specifies how adjacent table borders should be rendered (e.g., collapse for merging borders).
+  - **width:** Sets the width of the table (can be a percentage or pixel value).
+  - **align:** Aligns the table within its container (e.g., left, center, right).
+
+**Table Structure**
+- **< table>:** Defines the beginning and end of the table.
+- **< tr>:** Defines a table row. Each row contains cells.
+- **< td>:** Defines a table data cell. Used for regular table content.
+- **< th>:** Defines a table header cell. Typically used for column labels and styled differently (often bold and centered).
+
+### Pratices Set - Table
+   1. Table 1 -
+      ![Table1](https://github.com/ErShubham2908/SushantUIUX-2025/blob/master/Assets/Table%201.png?raw=true)
+
+   2. Table 2
+    ![alt text](image-1.png) 
