@@ -1,6 +1,6 @@
 ## DPG Gurugram, BBA-DM-II - Notes
 ### Unit - 1 : Introduction to website planning & development
-[Unit-1_Notes-Link](https://docs.google.com/document/d/1j5yj4vjmUWX_t_YF2GUacqk9RJtvA2StznZo8TTqnHU/edit?tab=t.0)
+[Unit-1_Notes-Link](https://docs.google.com/document/d/1j5yj4vjmUWX_t_YF2GUacqk9RJtvA2StznZo8TTqnHU/edit?tab=t.0){:target="_blank"}
 
 ---
 ### Unit - 2 : HTLM and CSS for digital marketers
