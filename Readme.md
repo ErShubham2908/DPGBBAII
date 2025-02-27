@@ -1,4 +1,11 @@
-## HTML / CSS 
+## DPG Gurugram, BBA-DM-II - Notes
+### Unit - 1 : Introduction to website planning & development
+[Unit-1_Notes-Link](https://docs.google.com/document/d/1j5yj4vjmUWX_t_YF2GUacqk9RJtvA2StznZo8TTqnHU/edit?tab=t.0)
+
+---
+### Unit - 2 : HTLM and CSS for digital marketers
+
+### HTML / CSS 
 **HTML :** HTML stands for **Hypertext Markup Language**. It's the standard markup language for creating web pages and web applications. HTML provides the structure and content of a webpage by using a system of tags and attributes.
 
 These tags define the various elements of a webpage such as headings, paragraphs, links, images, forms, and more. Web browsers interpret HTML documents and render them into visual web pages for users to view and interact with on the internet.
