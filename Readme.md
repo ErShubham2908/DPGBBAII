@@ -306,3 +306,57 @@ Prority - Inline > Internal > External
           font-size: 2em;
         }
         ```
+## Font Properties
+
+## Box-Model
+
+The CSS box model is a fundamental concept in web design that defines how elements are structured and positioned on a web page. It's essentially a mental model that browsers use to render HTML elements on the screen. Understanding this model is crucial for building well-structured and visually appealing websites.
+
+1. **Content:** This is the core area where your element's actual content resides. It can be text, images, videos, or any other web content. You can control the size of this area using the width and height properties in CSS.
+2. **Padding:** Padding creates a transparent inner layer around the content. It adds space between the content and the border of the element. Padding is defined using the padding property, which accepts values for all four sides (top, right, bottom, left) or horizontally and vertically.
+    - Padding can be set using properties like **padding-top,** **padding-right,** **padding-bottom,** and **padding-left**.
+3. **Border:** The border surrounds the content and padding, providing a visual separation from other elements on the page. You can control the style (solid, dashed, dotted), color, and thickness of the border using properties like border-style, border-color, and border-width.
+    - You can set border properties using **border-width**, **border-style**, and **border-color**.
+4. **Margin:** Margin creates a transparent outer layer around the entire box (content, padding, and border). It adds space between the element and its neighboring elements. Margins are defined using the margin property, similar to padding.
+    - Margin properties include **margin-top**, **margin-right**, **margin-bottom**, and **margin-left**.
+
+**Benefits of the Box Model:**
+
+-   **Precise control over element layout:** The box model allows you to define clear separations between elements using margins and padding.
+-   **Responsive design:** By understanding how box model properties interact, you can create layouts that adapt to different screen sizes.
+-   **Consistent visual appearance:** The box model ensures a consistent way for browsers to render elements across different platforms.
+
+**Q. calculate height and width of card, in box-sizing border box, height is 300px, width is 350px, border, margin and padding is 20px each.**
+
+## CSS Font Properties
+
+In CSS, font properties are used to control the appearance of text on web pages. They allow you to specify various aspects of the font used, such as size, style, weight, and more. Here’s a breakdown of the main font properties:
+
+**font-family:** Specifies the font family or list of fonts for an element. If the specified font is not available, the browser will use the next font in the list.
+
+Syntax:
+font-family: font1, font2, ...;
+Example: font-family: Arial, Helvetica, sans-serif;
+
+**font-size:** Sets the size of the font.
+Syntax: font-size: value;
+Example: font-size: 16px;
+
+**font-style:** Specifies the style of the font, such as normal, italic, or oblique.
+Syntax: font-style: normal | italic | oblique;
+Example: font-style: italic;
+
+**font-weight:** Sets the thickness or boldness of the font.
+Syntax:
+  font-weight: normal | bold | bolder | lighter | 100-900;
+  Example: font-weight: bold;
+
+**line-height:** Sets the height of each line of text.
+Syntax:
+  line-height: value;
+  Example: line-height: 1.5;
+
+**font:** Shorthand property that allows you to set all the font properties in one declaration.
+Syntax:
+  font: ```[font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family];```
+  Example: font: italic small-caps bold 16px/1.5 Arial, sans-serif;
