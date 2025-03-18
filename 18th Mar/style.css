@@ -1,0 +1,33 @@
+/* .div1{
+    width: 100px;
+    height: 100px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: yellow;
+    color: cyan ;
+} */
+
+/* CSS Font Properties */
+/* #heading{
+    color: rgb(6, 71, 71);
+    font-size: 32px;
+    font-style:italic;
+    font-weight:700;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+} */
+
+
+h1{
+    /* border: 5px;
+    border-style: double;
+    border-color: cyan; */
+    border: 5px double cyan;
+    color: red;
+    font-weight: 800;
+    font-size: 50px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
