@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 100%;
+    height: 60px;
+    border: 1px solid red;
+    background-color: cyan;
+    border-radius: 10px;
+    /* box-shadow */
+    box-shadow: 10px 10px 10px grey;
+    /* display: flex; */
+}
+
+div ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+div ul li{
+    /* border: 2px solid black; */
+    padding-top: 5px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    /* text-shadow */
+    text-shadow: 15px 15px 10px red;
+}
+
+/* #p-1{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    position: relative;
+    top: 30px;
+    right: 30px;
+} */
+
+/* #p-2{
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
+ 
+/* .parent-container{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    position: relative;
+    margin: auto;
+}
+
+#child1{
+    width: 100px;
+    height: 100px;
+    border: 1px double green;
+}
+
+#child2{
+    width: 100px;
+    height: 100px;
+    border: 1px dotted black;
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+/* 
+.p-class img{
+    position: fixed;
+    bottom: 140px;
+    right: 0;
+} */
+
+.p-2 p{
+    margin: 5px;
+}
+
+.p-2 img{
+    position: sticky;
+    right: 0px;
+    top: 100px;
+}

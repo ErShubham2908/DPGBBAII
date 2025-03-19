@@ -360,3 +360,106 @@ Syntax:
 Syntax:
   font: ```[font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family];```
   Example: font: italic small-caps bold 16px/1.5 Arial, sans-serif;
+
+
+# CSS Position
+
+The **position** property in CSS governs how an HTML element is positioned within a document's layout. It offers five distinct values that control the element's placement relative to its usual flow in the document or the viewport (the visible area of the browser window).
+**1. Static - (Default):**
+-   Elements with **position: static** (the default) occupy their standard position in the document's flow, meaning they're laid out one after another in the order they appear in the HTML code.
+-   The **top**, **right**, **bottom**, and **left** properties have no effect on statically positioned elements.
+-   ```
+.absolute-element {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}```
+
+**2. Absolute**
+    - Elements with position: absolute are removed from the document's flow and positioned relative to their nearest containing block (often the parent element or a block-level element like a < div>).
+    - The top, right, bottom, and left properties are used to specify the absolute position of the element within its containing block.
+    - Absolutely positioned elements create gaps in the document's flow where they would have been without absolute positioning.
+  - ```
+    .absolute-element {
+      position: absolute;
+      top: 50px;
+      right: 0;
+    } ```
+
+**3. Relative**
+   - Elements with position: relative remain in the document's flow but can be shifted relative to their original position using the top, right, bottom, and left properties.
+   - These offset values are applied relative to the element's original position, not the viewport or any containing element.
+   - Elements retain their place in the normal flow but can be offset using top, bottom, left, and right properties.
+   - Offsets are relative to the element's original position in the flow.
+   ```
+   .relative-element {
+        position: relative;
+        top: 50px; 
+        left: 20px;  
+} 
+```
+**4. Sticky**
+    - Combines aspects of relative and fixed.
+    - Behaves like relative until it reaches a specific scroll position.
+    - Then "sticks" to the viewport like fixed.
+    - Useful for headers that stay visible until a certain point.
+    ```
+    .sticky-element {
+        position: sticky;
+        top: 5px; 
+        left: 0;  
+} 
+```
+
+**5. Fixed**
+    - The element is removed from the normal document flow and positioned relative to the viewport. It stays in the same position even if the page is scrolled.
+    - Positioned relative to the viewport and remains fixed even when scrolling.
+    - Useful for navigation bars or sidebars that stay visible.
+    - Uses top, right, bottom, and left properties for positioning.
+    ```
+    .fixed-element {
+        position: fixed;
+        top: 0;   
+        left: 0;
+}
+
+# Box-Shadow and Text-Shadow in CSS
+
+**1. Text Shadow:** The text-shadow property adds shadow to the text of an element. It creates a shadow effect behind the text to make it stand out or give it a more visually appealing appearance.
+
+-   **CSS Property:**
+
+`text-shadow: [horizontal offset] [vertical offset] [blur radius] [color];`
+`box-shadow: [horizontal offset] [vertical offset] [blur radius] [color];`
+
+-   **Horizontal Offset:** It specifies the horizontal distance of the shadow from the text. A positive value moves the shadow to the right, while a negative value moves it to the left.
+-   **Vertical Offset:** It specifies the vertical distance of the shadow from the text. A positive value moves the shadow downwards, while a negative value moves it upwards.
+-   **Extra :**
+    -   **Offset:** Defines how far the shadow is positioned horizontally (x-axis) and vertically (y-axis) from the text. Values can be positive, negative lengths (px, em, rem), or percentages.
+-   **Blur Radius:** It specifies the amount of blur applied to the shadow. A higher value creates a more blurred shadow effect.
+-   **Color:** It specifies the color of the shadow. You can use color names, hexadecimal, RGB, RGBA, HSL, or HSLA values to define the color.
+-   **Example:**
+
+```
+h1 {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+}
+```
+
+**2. Box-Shadow:** The box-shadow property adds shadow effects to an element's box (such as a < div>). It creates a shadow behind the box, giving it depth and dimensionality.
+
+**CSS Property:**
+
+```
+box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color] [inset];
+```
+
+-   **Horizontal Offset:** It specifies the horizontal distance of the shadow from the box. Positive values move the shadow to the right, and negative values move it to the left.
+-   **Vertical Offset:** It specifies the vertical distance of the shadow from the box. Positive values move the shadow downwards, and negative values move it upwards.
+-   **Blur Radius:** It specifies the amount of blur applied to the shadow. Higher values create a more blurred shadow effect.
+-   **Spread Radius:** It specifies the spread of the shadow. Positive values expand the shadow, while negative values shrink it. This property is optional.
+-   **Color:** It specifies the color of the shadow, using the same color value formats as text-shadow.
+
+```
+box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
+```
