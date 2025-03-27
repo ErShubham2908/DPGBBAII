@@ -631,12 +631,14 @@ box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] 
 
 A media query in CSS is used to apply different styles based on the device's screen size, resolution, or other properties. It helps create responsive designs that adjust to different screen sizes.   
 
+**Syntax:**
 ```
 @media (max-width: 768px) {
     .parent {
         background-color: lightblue;
     }
 }
+
 ```
 - **@media (max-width: 768px):** This media query applies styles only when the screen width is 768 pixels or smaller.
 - The .parent element will have a lightblue background when viewed on devices with a width of 768px or less.
