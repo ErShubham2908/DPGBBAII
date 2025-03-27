@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+div{
+    width: 100%;
+    height: 50vh;
+    border: 1px solid red;
+}
+
+span{
+    width: 33%;
+    height: 20vh;
+    border: 1px double black;
+    display: inline-block;
+    margin: auto;
+} */
+
+.parent{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent ul{
+    display: flex;
+}

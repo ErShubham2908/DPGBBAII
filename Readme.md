@@ -403,7 +403,7 @@ The **position** property in CSS governs how an HTML element is positioned withi
     - Behaves like relative until it reaches a specific scroll position.
     - Then "sticks" to the viewport like fixed.
     - Useful for headers that stay visible until a certain point.
-    ```
+```
     .sticky-element {
         position: sticky;
         top: 5px; 
@@ -460,6 +460,237 @@ box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] 
 -   **Spread Radius:** It specifies the spread of the shadow. Positive values expand the shadow, while negative values shrink it. This property is optional.
 -   **Color:** It specifies the color of the shadow, using the same color value formats as text-shadow.
 
+``` box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5); ```   
+
+# Display in CSS
+**1. Display:block**
+-  
+- Definition: Block-level elements take up the full width available, starting a new line before and after the element.
+- Key Benefits: They allow for easy manipulation of layout, such as setting width, height, margins, and padding.
+
 ```
-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
+.block-element {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+}
 ```
+
+**2. display: inline**  
+-
+- Definition: Inline elements only take up as much width as necessary and do not start on a new line.
+- Key Benefits: They flow within the content and are ideal for elements that need to sit next to each other horizontally.
+
+```
+.inline-element {
+    display: inline;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #e0e0e0;
+}
+```
+
+**3. display: inline-block**
+-
+- **Definition:** Inline-block elements are similar to inline elements in that they do not start on a new line, but they can have width, height, margins, and padding applied.
+- **Key Benefits:** They combine the benefits of block and inline elements, allowing for block-level styling while flowing inline.
+
+```
+.inline-block-element {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 5px;
+    padding: 3px;
+    background-color: #d0d0d0;
+}
+
+```
+
+**What is difference between Block, Inline-block and inline**
+---
+
+| Feature            | Block                      | Inline-Block                 | Inline                      |
+|--------------------|----------------------------|------------------------------|-----------------------------|
+| **Starts on a new line?** | ✅ Yes              | ❌ No                       | ❌ No                       |
+| **Takes full width?** | ✅ Yes (by default)         | ❌ No (only as much as needed) | ❌ No (only as much as content) |
+| **Can set width & height?** | ✅ Yes                        | ✅ Yes                        | ❌ No                         |
+| **Respects margin & padding?** | ✅ Yes (all sides)         | ✅ Yes (all sides)         | ⚠️ Only horizontal (left & right) |
+| **Stacks on top of each other?** | ✅ Yes                        | ❌ No (placed inline)      | ❌ No (placed inline)       |
+| **Common elements** | `<div>`, `<p>`, `<section>`   | `<button>`, `<img>`, `<input>` | `<span>`, `<a>`, `<strong>`  |
+| **Best use case** | Structure/layout (e.g., sections, containers) | Inline elements that need size control (e.g., buttons, menus) | Small text elements that flow naturally |
+---
+
+
+# Display : Flex
+
+**1. Flex & inline-flex**  
+-
+-  **display: flex;** → Makes an element a block-level flex container. 
+  ```
+  .container{
+      display: flex;
+  }
+  ```
+-  **display: inline-flex;** → Makes an element an inline-level flex container.  
+  ```
+  .container{
+      display: inline-flex;
+  }
+  ```
+
+**2. flex-direction  (Defines the Direction of Items)**
+-
+- Determines the main axis along which items are placed.   
+|Value|Effect|
+  |---|---|
+  |**row (default)**| Items align horizontally (left to right)|
+  |**row-reverse** | Items align horizontally (right to left)|
+  |**column** | Items align vertically (top to bottom)|
+  |**column-reverse** | Items align vertically (bottom to top) |
+
+```
+.container {
+    display: flex;
+    flex-direction: column;
+}
+```
+
+**3. justify-content (Aligns Items Horizontally)**
+-
+- Determines the main axis along which items are placed.  
+
+|Value|Effect| 
+|---|---|
+|**flex-start (default)**|	Items align to the start (left in row, top in column)|
+|**flex-end**|	Items align to the end (right in row, bottom in column)|
+|**center**|	Items center along the main axis.|
+|**space-between**|	Items are evenly spaced, first and last touching edges|
+|**space-around**|	Items are evenly spaced, with gaps on both sides|
+|**space-evenly**|	Items are evenly distributed, with equal spacing everywhere|
+---
+
+```
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+```
+
+**4. align-items (Aligns Items Vertically)**
+-
+- Controls how items are aligned along the cross-axis.  
+
+|Value | Effect | 
+|--- | --- |
+|**stretch (default)**|	Items stretch to fill container height|
+|**flex-start**| Items align at the top (or left in column)|
+|**flex-end**|	Items align at the bottom (or right in column)|
+|**center**|	Items center vertically|
+|**baseline**|	Items align based on their text baseline|
+---
+
+```
+.container {
+    display: flex;
+    align-items: center;
+}
+```
+
+**5. flex-wrap (Handles Item Wrapping)**  
+-
+- Determines whether items should wrap to the next line if they don’t fit.
+
+|Value |	Effect|
+|--- | --- | 
+|**nowrap (default)**|	Items do not wrap and may overflow|
+|**wrap**|	Items wrap to a new row/column if needed|
+|**wrap-reverse**|	Items wrap in reverse order|
+---
+```
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+```
+
+**6. gap (Adds Space Between Items)**
+-
+- Sets spacing between flex items.  
+```
+.container {
+    display: flex;
+    gap: 20px;
+}
+```
+
+# Media Query in CSS
+
+A media query in CSS is used to apply different styles based on the device's screen size, resolution, or other properties. It helps create responsive designs that adjust to different screen sizes.   
+
+```
+@media (max-width: 768px) {
+    .parent {
+        background-color: lightblue;
+    }
+}
+```
+- **@media (max-width: 768px):** This media query applies styles only when the screen width is 768 pixels or smaller.
+- The .parent element will have a lightblue background when viewed on devices with a width of 768px or less.
+
+**📌 Common Breakpoints for Different Screen Sizes**
+-
+
+|Device Type|	Screen Width (px)|
+|---|---|
+|**Extra Small (Phones)**|	max-width: 480px |
+|**Small (Tablets - Portrait)**| max-width: 768px |
+|**Medium (Tablets - Landscape, Small Laptops)**|	max-width: 1024px|
+|**Large (Desktops, Laptops)**|	max-width: 1200px|
+|**Extra Large (Large Screens, TVs)**|	min-width: 1201px|
+---
+
+```
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Small Devices (Tablets in Portrait Mode) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Medium Devices (Tablets in Landscape, Small Laptops) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Large Devices (Laptops, Desktops) */
+@media (max-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Extra Large Screens (TVs, Large Monitors) */
+@media (min-width: 1201px) {
+    body {
+        font-size: 22px;
+    }
+}
+```
+
+
+
+
+
