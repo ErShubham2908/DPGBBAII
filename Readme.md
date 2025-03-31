@@ -692,7 +692,148 @@ A media query in CSS is used to apply different styles based on the device's scr
 }
 ```
 
+# Unit 3: JavaScript for Digital Marketing
+
+## Introduction to JavaScript- Role of JavaScript in web development
+**1. Definition:** JavaScript is a high-level, interpreted programming language primarily used for client-side scripting in web development. It allows developers to create dynamic and interactive web pages.
+
+**2. Client-Side Interactivity:** JavaScript runs in the browser, enabling functionalities like form validations, interactive content updates without page reloads (AJAX), and handling user events (clicks, scrolls, etc.).
+
+**3. Enhanced User Experience:** By manipulating the Document Object Model (DOM), JavaScript dynamically updates page content, improving user interaction and responsiveness.
+
+**4. Cross-Browser Compatibility:** JavaScript helps ensure web applications function consistently across different browsers, enhancing accessibility and user experience.
+
+**5. Server-Side Applications:** With Node.js, JavaScript can also be used for server-side scripting, allowing full-stack development using a single programming language.
+
+**6. Libraries and Frameworks:** JavaScript frameworks (e.g., React, Angular, Vue.js) and libraries (e.g., jQuery) simplify complex tasks, speeding up development and enhancing code maintainability.
+
+**7. Integration:** JavaScript integrates seamlessly with HTML and CSS, enabling developers to create cohesive and visually appealing web applications.
+
+## Basic Syntax and Variables in JavaScript
+JavaScript follows a simple and flexible syntax that makes it easy to write and execute code. Here are the key elements:
+
+**1. Statements:** Each instruction in JavaScript is called a statement and usually ends with a semicolon (;).
+```
+console.log("Hello, World!");
+```  
+**2. Comments:** Used to make the code more readable.
+```
+// This is a single-line comment
+/* This is a 
+   multi-line comment */
+```
+**3. Variables:** Used to store data. Declared using var, let, or const.
+```
+let name = "John";  // String variable
+const age = 25;     // Constant variable (cannot be changed)
+var isStudent = true; // Old way (not recommended)
+```
+
+## List of JavaScript Data Types
+JavaScript has two categories of data types:
+
+**1. Primitive Data Types (Immutable)**
+  - String
+  - Number
+  - Boolean
+  - Undefined
+  - Null
+  - Symbol (ES6)
+  - BigInt (ES6)
+
+**2. Non-Primitive** (Reference) Data Types (Mutable)
+  - Object
+  - Array
+  - Function
+
+## Operator In JavaScript
+An operator in JavaScript is a symbol that performs an operation on one or more values (operands). Operators allow you to manipulate variables and values in expressions.
+
+- **Types of Operators in JavaScript**  
+  - Arithmetic Operators
+  - Assignment Operators
+  - Comparison Operators
+  - Logical Operators
+  - Bitwise Operators
+  - Ternary Operator
+  - Typeof Operators
+
+**1. Arithmetic Operators**
+These operators perform mathematical calculations.
+
+Example
+let a = 10, b = 3;  
+console.log(a + b); // Output: 13  
+console.log(a - b); // Output: 7  
+console.log(a * b); // Output: 30  
+console.log(a / b); // Output: 3.3333  
+console.log(a % b); // Output: 1  
+console.log(a ** b); // Output: 1000  
+
+**2. Assignment Operators** Used to assign values to variables.  
+
+let x = 10;  
+x += 5;  // x = x + 5 (x becomes 15)  
+x *= 2;  // x = x * 2 (x becomes 30)  
+console.log(x); // Output: 30
+
+**3. Comparison Operators** Used to compare values and return true or false.
+
+```  
+==	Equal to (value only)	5 == "5" (true)  
+===	Strictly equal (value + type)	5 === "5" (false)  
+!=	Not equal	5 != 3 (true)  
+!==	Strictly not equal	5 !== "5" (true)  
+>	Greater than	10 > 5 (true)  
+<	Less than	10 < 5 (false)  
+>=	Greater than or equal	5 >= 5 (true)  
+<=	Less than or equal	4 <= 5 (true)  
+```
+
+console.log(5 == "5");   // true (checks only value)  
+console.log(5 === "5");  // false (checks value & type)  
+console.log(10 > 5);     // true  
+console.log(10 < 5);     // false  
+
+**4. Logical Operators** Used to combine multiple conditions.
+
+**Example**
+- && (AND)	Returns true if both conditions are true	(5 > 3 && 10 > 8) → true
+`		` (OR)  
+! (NOT)	Reverses the condition	!(5 > 3) → false  
+
+console.log(5 > 3 && 10 > 8);  // true (Both are true)  
+console.log(5 > 10 || 10 > 8); // true (One is true)  
+console.log(!(5 > 3));         // false (Negates true)  
+
+**5. Bitwise Operators** Used for operations on binary numbers.
 
 
+let a = 5, b = 3;
+console.log(a & b);  // Output: 1
+console.log(a | b);  // Output: 7
+console.log(a ^ b);  // Output: 6
+console.log(~a);     // Output: -6
+console.log(a << 1); // Output: 10
+console.log(a >> 1); // Output: 2
 
+**5. Ternary Operator (Conditional Operator)** Shorter way to write if...else conditions.
 
+Operator	Description	Example
+? :	Returns one of two values based on a condition	age >= 18 ? "Adult" : "Minor"
+
+let age = 20;  
+let status = (age >= 18) ? "Adult" : "Minor";  
+console.log(status); // Output: Adult  
+
+**6. Type Operators** Used to check data types.
+
+typeof	Returns the type of a variable	typeof 42 → "number"
+instanceof	Checks if an object is an instance of a specific class	arr instanceof Array
+
+console.log(typeof "Hello");   // Output: string  
+console.log(typeof 42);        // Output: number  
+console.log(typeof true);      // Output: boolean  
+console.log(typeof undefined); // Output: undefined  
+console.log(typeof null);      // Output: object (JavaScript quirk)  
+console.log([1,2,3] instanceof Array); // true  
