@@ -693,6 +693,7 @@ A media query in CSS is used to apply different styles based on the device's scr
 ```
 
 # Unit 3: JavaScript for Digital Marketing
+# JavaScript Day - 1
 
 ## Introduction to JavaScript- Role of JavaScript in web development
 **1. Definition:** JavaScript is a high-level, interpreted programming language primarily used for client-side scripting in web development. It allows developers to create dynamic and interactive web pages.
@@ -745,6 +746,8 @@ JavaScript has two categories of data types:
   - Object
   - Array
   - Function
+
+# JavaScript Day - 2
 
 ## Operator In JavaScript
 An operator in JavaScript is a symbol that performs an operation on one or more values (operands). Operators allow you to manipulate variables and values in expressions.
@@ -808,7 +811,6 @@ console.log(!(5 > 3));         // false (Negates true)
 
 **5. Bitwise Operators** Used for operations on binary numbers.
 
-
 let a = 5, b = 3;
 console.log(a & b);  // Output: 1
 console.log(a | b);  // Output: 7
@@ -837,3 +839,364 @@ console.log(typeof true);      // Output: boolean
 console.log(typeof undefined); // Output: undefined  
 console.log(typeof null);      // Output: object (JavaScript quirk)  
 console.log([1,2,3] instanceof Array); // true  
+
+## Conditional Statements
+This experimental model uses your Search history. Some features aren't available.
+Conditional statements in JavaScript allow you to control the flow of your program by executing certain blocks of code only when specific conditions are met. Here's a breakdown of the common conditional statements:
+
+**1. if statement**:  
+The if statement is the most basic conditional statement. It executes a block of code if a specified condition is true.   
+```
+let age = 20;
+
+if (age >= 18) {
+  console.log("You are eligible to vote!");
+}
+```
+
+**2. else statement:**  
+You can use an else statement to execute a block of code if the condition in the preceding if statement is false.
+```
+let age = 15;
+
+if (age >= 18) {
+  console.log("You are eligible to vote!");
+} else {
+  console.log("You are not eligible to vote yet.");
+}
+```
+
+**3. else if statement:**  
+The else if statement allows you to check multiple conditions in sequence. If the preceding if condition is false, the else if condition is evaluated. You can have multiple else if statements.
+```
+let grade = 75;
+
+if (grade >= 80) {
+  console.log("Excellent!");
+} else if (grade >= 60) {
+  console.log("Good job!");
+} else {
+  console.log("Needs improvement.");
+}
+```
+
+**4. switch statement:**   
+The switch statement provides an alternative way to execute different blocks of code based on the value of an expression. It compares the value of the expression with multiple cases
+```
+let day = "Monday";
+
+switch (day) {
+  case "Monday":
+    console.log("Start of the work week.");
+    break;
+  case "Friday":
+    console.log("Almost weekend!");
+    break;
+  default:
+    console.log("Just another day.");
+}
+```
+- The break keyword is used to exit the switch statement once a matching case is found. If you omit break, the execution will "fall through" to the next case.
+- The default case is executed if none of the case values match the expression.
+
+**5. Ternary Operator:**   
+The ternary operator (also known as the conditional operator) provides a concise way to write simple if...else statements in a single line. Its syntax is:
+`condition ? expression_if_true : expression_if_false;`
+```
+let isMember = true;
+let discount = isMember ? 0.10 : 0; // If isMember is true, discount is 0.10, otherwise 0
+
+console.log("Discount:", discount);
+```
+
+**Choosing the Right Conditional Statement:**  
++ Use if, else, and else if for conditions that involve boolean evaluations (true or false) or a series of related conditions.  
++ Use switch when you need to compare a single expression against multiple specific values. This can often be more readable than a long chain of else if statements.  
++ Use the ternary operator for short, simple if...else statements where you want to assign a value to a variable based on a condition. Avoid using it for complex logic as it can become harder to read.
+
+
+## JavaScript Functions and Events
+**📌 Functions in JavaScript**  
+🔹 **What is a Function:**   
+- A function is a reusable block of code that performs a specific task.
+- It helps to avoid repetition and makes the code more organized.
+
+**🔹 Types of Functions** There are three ways to define a function in JavaScript:
+
+**1️⃣ Function Declaration (Named Function):** 
+- Uses the function keyword followed by a name.
+- Can be called before it is defined (Hoisting applies).
+
+Syntax:
+```
+function functionName(parameters) {
+    // Function body (code to be executed)
+}
+```
+Example:
+```
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+greet("John");  // Output: Hello, John!
+```
+**2️⃣ Function Expression (Anonymous Function)**
+- A function assigned to a variable. 
+- Cannot be called before its definition (Hoisting does NOT apply).
+
+Example:
+```
+const add = function(a, b) {
+    return a + b;
+};
+console.log(add(5, 3));  // Output: 8
+```
+**3️⃣ Arrow Function (ES6)**
+- A shorter way to write functions using => (arrow syntax).
+- Does not have its own this keyword.
+
+Example:
+```
+const multiply = (a, b) => a * b;
+console.log(multiply(4, 5));  // Output: 20
+```
+
+**🔹 Calling a Function**
+- To execute a function, we use its name followed by parentheses ().
+
+Example:
+```
+function sayHello() {
+    console.log("Hello, World!");
+}
+sayHello();  // Output: Hello, World!
+```
+**🔹 Function Parameters & Return Value**
+- Parameters: Values passed into a function.
+- Return Value: Sends output back when the function is called.
+
+Example:
+```
+function square(number) {
+    return number * number;
+}
+console.log(square(4));  // Output: 16
+```
+
+**JavaScript Events**
+- **🔹 What is an Event?**
+    - An event is an action triggered by the user or browser (e.g., clicking a button, pressing a key).
+
+**🔹 Common Events in JavaScript**  
+-
+
+|Event Name	| Description	| 
+|-----------|-------------|
+|click	|When an element is clicked|
+|mouseover	|When the mouse hovers over an element|
+|mouseout	|When the mouse moves away from an element|
+|keydown	|When a key is pressed on the keyboard|
+|keyup	|When a key is released|
+|submit	|When a form is submitted|
+|change	|When the value of an input field changes|
+---
+
+
+## DOM (Document Object Model) manipulation
+
+**📌 What is the DOM?**
+- The DOM (Document Object Model) represents the structure of a web page as a tree of objects.
+- Each HTML element is represented as a node in the DOM tree.
+- JavaScript allows us to manipulate the DOM dynamically by adding, removing, or modifying elements.
+
+**🔹 Accessing Elements in the DOM:** To manipulate elements, we first need to select them using JavaScript.
+
+**1️⃣ Selecting Elements by ID (getElementById):** Returns a single element with the specified id.
+```
+<p id="demo">Hello World</p>
+<script>
+    let element = document.getElementById("demo");
+    console.log(element.textContent); // Output: Hello World
+</script>
+```
+
+**2️⃣ Selecting Elements by Class (getElementsByClassName):**
+Returns a collection (array-like) of elements with the given class.
+```
+<p class="text">First</p>
+<p class="text">Second</p>
+<script>
+    let elements = document.getElementsByClassName("text");
+    console.log(elements[0].textContent); // Output: First
+</script>
+```
+**3️⃣ Selecting Elements by Tag Name (getElementsByTagName)**
+Returns a collection of all elements with the given tag name (e.g., div, p).
+
+```
+<h1>Hello</h1>
+<h1>World</h1>
+<script>
+    let headings = document.getElementsByTagName("h1");
+    console.log(headings[1].textContent); // Output: World
+</script>
+```
+
+**4️⃣ Selecting Elements Using Query Selectors (querySelector & querySelectorAll)**
+- **querySelector(selector) →** Returns the first matching element.
+- **querySelectorAll(selector) →** Returns a NodeList of all matching elements.
+```
+<p class="text">First</p>
+<p class="text">Second</p>
+<script>
+    let firstElement = document.querySelector(".text");
+    console.log(firstElement.textContent); // Output: First
+
+    let allElements = document.querySelectorAll(".text");
+    console.log(allElements.length); // Output: 2
+</script>
+```
+
+**🔹 Modifying DOM Elements**
+- Once an element is selected, we can change its content, styles, and attributes.
+
+**1️⃣ Changing Text Content (textContent & innerHTML)**
+- textContent → Changes only the text inside an element.
+- innerHTML → Changes text and HTML inside an element.
+```
+<p id="demo">Old Text</p>
+<script>
+    let element = document.getElementById("demo");
+    element.textContent = "New Text";
+    // OR
+    element.innerHTML = "<strong>New Text</strong>";
+</script>
+```
+
+**2️⃣ Changing CSS Styles (style Property)**
+- We can modify an element's CSS properties using JavaScript.
+```
+<p id="demo">Styled Text</p>
+<script>
+    let element = document.getElementById("demo");
+    element.style.color = "red";
+    element.style.fontSize = "20px";
+</script>
+```
+
+**3️⃣ Changing Attributes (setAttribute & getAttribute)**
+- setAttribute(name, value) → Changes an attribute value.
+- getAttribute(name) → Gets an attribute value.
+```
+<img id="myImage" src="old.png" />
+<script>
+    let img = document.getElementById("myImage");
+    img.setAttribute("src", "new.png"); // Change image source
+    console.log(img.getAttribute("src")); // Output: new.png
+</script>
+```
+
+**🔹 Creating & Removing Elements**
+- JavaScript allows us to dynamically add or remove elements from the DOM.
+**1️⃣ Creating New Elements (createElement, appendChild)**
+- Example: Adding a new <p> inside a <div>.
+```
+<div id="container"></div>
+<script>
+    let newParagraph = document.createElement("p");
+    newParagraph.textContent = "New Element Added!";
+    document.getElementById("container").appendChild(newParagraph);
+</script>
+```
+**2️⃣ Removing Elements (removeChild)**
+- Example: Removing a `<p>` element.
+```
+<div id="container">
+    <p id="removeMe">Remove this text</p>
+</div>
+<script>
+    let parent = document.getElementById("container");
+    let child = document.getElementById("removeMe");
+    parent.removeChild(child);
+</script>
+```
+
+
+**🔹 Handling Events in JavaScript**
+- Events can be handled using different methods:
+
+**1️⃣ Handling Click Events**
+```
+<button id="clickBtn">Click Me</button>
+
+<script>
+    document.getElementById("clickBtn").addEventListener("click", function() {
+        alert("Button Clicked!");
+    });
+</script>
+```
+
+**2️⃣ Handling Mouse Events**
+```
+<div id="box" style="width: 200px; height: 100px; background: lightblue;"></div>
+
+<script>
+    let box = document.getElementById("box");
+
+    box.addEventListener("mouseover", function() {
+        box.style.background = "yellow";
+    });
+
+    box.addEventListener("mouseout", function() {
+        box.style.background = "lightblue";
+    });
+</script>
+```
+
+**3️⃣ Handling Keyboard Events**
+```
+<input type="text" id="nameInput" placeholder="Type something..." />
+
+<script>
+    document.getElementById("nameInput").addEventListener("keyup", function(event) {
+        console.log("Key pressed: " + event.key);
+    });
+</script>
+```
+
+**4️⃣ Handling Form Events**
+```
+<form id="myForm">
+    <input type="text" id="username" placeholder="Enter your name" required />
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent page reload
+        alert("Form Submitted Successfully!");
+    });
+</script>
+```
+
+**🔹 Handling Events with DOM**
+- DOM manipulation often involves event handling.
+```
+<p id="demo">Click the button to change this text.</p>
+<button id="btn">Click Me</button>
+
+<script>
+    document.getElementById("btn").addEventListener("click", function() {
+        document.getElementById("demo").textContent = "Text Changed!";
+    });
+</script>
+```
+
+|Property	| Description |
+|---------|-------------|
+|parentNode	|Selects the parent of an element|
+|childNodes	|Selects all children (including text nodes)|
+|firstChild	|Selects the first child node|
+|lastChild	|Selects the last child node|
+|nextSibling	|Selects the next sibling element|
+|previousSibling	|Selects the previous sibling element|
