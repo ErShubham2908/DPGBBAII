@@ -136,11 +136,166 @@ console.log(age); */
 //     console.log("Sorry!!!");    
 // }
 
-let marks = Number(prompt("Enter Your %: "))
-if(marks >= 90){
-    console.log("A+");    
-}else if(marks > 80 && marks < 90){
-    console.log("A");
-}else{
-    console.log("Failed....")
-}
+// let marks = Number(prompt("Enter Your %: "))
+// if(marks >= 90){
+//     console.log("A+");    
+// }else if(marks > 80 && marks < 90){
+//     console.log("A");
+// }else{
+//     console.log("Failed....")
+// }
+
+// JavaScript Day - 3
+
+// let day = "Monday";
+
+// switch (day) {
+//   case "Monday":
+//     console.log("Start of the work week.");
+//     // break;
+//   case "Friday":
+//     console.log("Almost weekend!");
+//     break;
+//   default:
+//     console.log("Just another day.");
+// }
+
+
+// Function decleration
+
+// let a = Number(prompt("Enter First Number: "));
+// let b = Number(prompt("Enter Second Number: "));
+// function Sum(num1, num2){
+//     console.log("Line no: 169 ",num1 + num2); //15
+//     return num1 - num2; // 5
+    
+// }
+
+// // Function Caling
+// console.log("Line 174: ",Sum(a, b));
+
+
+// const multi = function(a, b){
+//     return a*b
+// }
+
+// console.log(multi(10, 10));
+
+
+// Arrow function [ES6]
+
+// const sum = (a, b) =>  a+ b;
+// console.log(sum(10, 20))
+
+
+// const abc = (num1, num2) => {
+//     return num1 + num2
+// }
+
+
+
+
+// DOM - Document Object Model
+// JS Selector
+// 1. getElementById - 
+// 2. getElementsByClassName
+// 3. getElementsByTagName
+// 4. querySelector()
+// 5. querySelectorAll()
+
+
+// 3. getElementsByTagName
+// let data = document.getElementsByTagName('h1')
+// console.log(data);
+// data[1].style.color = "red"
+// data[1].style.fontSize= "50px"
+
+// 2. getElementsByClassName
+
+// let classValue = document.getElementsByClassName('head');
+// console.log(classValue);
+
+// classValue[2].style.color = "red"
+
+// let a = document.getElementById('headId');
+
+// console.log(a);
+
+// a.style.backgroundColor = "green"
+
+// querySelector
+
+// let z = document.querySelectorAll("#headId");
+
+// console.log(z);
+
+// addEventListener(event name, function)
+
+// let btn = document.querySelector('button');
+// let data = document.querySelectorAll('#headId')
+
+
+// btn.addEventListener('mouseover', function(){
+//   console.log(data);
+//   data[1].style.color = "white"
+//   data[1].style.backgroundColor = "green"
+    
+// })
+
+
+// btn.addEventListener('keypress', function(e){
+//     console.log(e);
+//     data[1].style.color = "lightgreen"
+//     data[1].style.backgroundColor = "blue"
+      
+//   })
+
+
+
+// let btn = document.querySelector('button');
+// let input = document.getElementById('field')
+// let assignData = document.getElementById('Assign')
+
+// btn.addEventListener('click', () => {
+//     // console.log(input.value);
+//     assignData.innerHTML = input.value
+    
+// })
+
+
+// var , let , const - ES6 - 2015
+
+// var a = 10;
+// var a = 20;
+// console.log(a);
+
+// // premitive datatype
+// let b = 30;
+// b = 40;
+// console.log(b);
+
+// non-premotive datatype
+// const e = 40;
+// const e = 50;
+// e = 60;
+
+
+    // {
+    // var a = 10;
+    // let b = 20;
+    // const c = 30
+    // console.log(a, b, c);
+    // }
+    // console.log(a);
+    // console.log(b);
+    // console.log(c);
+    
+// console.log(a, b, c);
+// abc();
+
+
+
+
+
+
+
