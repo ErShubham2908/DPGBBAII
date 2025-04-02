@@ -819,7 +819,7 @@ console.log(~a);     // Output: -6
 console.log(a << 1); // Output: 10
 console.log(a >> 1); // Output: 2
 
-**5. Ternary Operator (Conditional Operator)** Shorter way to write if...else conditions.
+**6. Ternary Operator (Conditional Operator)** Shorter way to write if...else conditions.
 
 Operator	Description	Example
 ? :	Returns one of two values based on a condition	age >= 18 ? "Adult" : "Minor"
@@ -828,7 +828,7 @@ let age = 20;
 let status = (age >= 18) ? "Adult" : "Minor";  
 console.log(status); // Output: Adult  
 
-**6. Type Operators** Used to check data types.
+**7. Type Operators** Used to check data types.
 
 typeof	Returns the type of a variable	typeof 42 → "number"
 instanceof	Checks if an object is an instance of a specific class	arr instanceof Array
@@ -914,6 +914,7 @@ console.log("Discount:", discount);
 + Use switch when you need to compare a single expression against multiple specific values. This can often be more readable than a long chain of else if statements.  
 + Use the ternary operator for short, simple if...else statements where you want to assign a value to a variable based on a condition. Avoid using it for complex logic as it can become harder to read.
 
+# JavaScript Day - 3
 
 ## JavaScript Functions and Events
 **📌 Functions in JavaScript**  
