@@ -293,9 +293,3 @@ console.log(age); */
 // console.log(a, b, c);
 // abc();
 
-
-
-
-
-
-

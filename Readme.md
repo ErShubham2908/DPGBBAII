@@ -1201,3 +1201,7 @@ Returns a collection of all elements with the given tag name (e.g., div, p).
 |lastChild	|Selects the last child node|
 |nextSibling	|Selects the next sibling element|
 |previousSibling	|Selects the previous sibling element|
+
+
+Notes Link - Unit 4 
+[Click Here](https://docs.google.com/document/d/1MRcyqioPBUDcvtOPZxLTUZk8gcPiSuaLQLQa73NmsZE/edit?tab=t.0)
